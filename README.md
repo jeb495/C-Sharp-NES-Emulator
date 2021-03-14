@@ -1,6 +1,11 @@
-# A (almost) fully documented Emulator, originally written by Xyene github.com/Xyene
+# A (almost) fully documented Emulator, originally written by Xyene github.com/Xyene. 
+##New features and overall codebase improvements are also present
 ## The main resource used was the NES Dev Wiki --> http://wiki.nesdev.com/w/index.php/Nesdev_Wiki
  A C# emulator for Nintendo Entertainment System (NES) hardware.
+
+Features currently being worked on: 
+ -APU support, meaning audio will finally be supported
+ -PPU filters, including a gameboy filter in addition to a virtual boy filter
 
 ![](http://i.imgur.com/aef0cM9.png) <!-- Donkey Kong -->
 ![](http://i.imgur.com/OjrvRmz.png) <!-- Super Mario Bros -->
