@@ -52,6 +52,8 @@ The following mappers are implemented:
 
 The APU is currently not implemented, which means no games output audio.
 
+As of 3/14/2021, the APU is being implemented, although some additional time is needed to fine tune some things. 
+
 ## Compilation
 Emulator.NES uses C# 7 language features, so requires a compiler that supports them.
 
