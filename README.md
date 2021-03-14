@@ -1,5 +1,5 @@
-# An Emulator, originally written by Xyene github.com/Xyene
-
+# A (almost) fully documented Emulator, originally written by Xyene github.com/Xyene
+## The main resource used was the NES Dev Wiki --> http://wiki.nesdev.com/w/index.php/Nesdev_Wiki
  A C# emulator for Nintendo Entertainment System (NES) hardware.
 
 ![](http://i.imgur.com/aef0cM9.png) <!-- Donkey Kong -->
