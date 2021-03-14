@@ -3,9 +3,9 @@
 ## The main resource used was the NES Dev Wiki --> http://wiki.nesdev.com/w/index.php/Nesdev_Wiki
  A C# emulator for Nintendo Entertainment System (NES) hardware.
 
-Features currently being worked on: 
- -APU support, meaning audio will finally be supported
- -PPU filters, including a gameboy filter in addition to a virtual boy filter
+## Features currently being worked on: 
+###  -APU support, meaning audio will finally be supported
+###  -PPU filters, including a gameboy filter in addition to a virtual boy filter
 
 ![](http://i.imgur.com/aef0cM9.png) <!-- Donkey Kong -->
 ![](http://i.imgur.com/OjrvRmz.png) <!-- Super Mario Bros -->
