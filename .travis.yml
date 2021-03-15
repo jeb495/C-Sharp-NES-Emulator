@@ -1,4 +1,0 @@
-language: csharp
-solution: dotNES.sln
-install:
-  - nuget restore dotNES.sln
