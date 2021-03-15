@@ -2,6 +2,9 @@ using System;
 using System.Linq;
 using System.Reflection;
 
+
+//Emulates the CPU and creates the Execute method to be called later in the program
+//https://wiki.nesdev.com/w/index.php/CPU
 namespace dotNES
 {
     sealed partial class CPU : Addressable
