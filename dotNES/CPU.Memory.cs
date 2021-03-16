@@ -2,6 +2,8 @@
 using System.Runtime.CompilerServices;
 using static dotNES.CPU.AddressingMode;
 
+
+//Establish CPU Memory 
 namespace dotNES
 {
     sealed partial class CPU
@@ -61,6 +63,7 @@ namespace dotNES
             throw new NotImplementedException();
         }
 
+        //read through address
         public uint AddressRead()
         {
             if (_opcodeDefs[_currentInstruction].Mode == Direct) return _rmwValue = A;
@@ -68,6 +71,7 @@ namespace dotNES
             return _rmwValue = ReadByte((uint)_currentMemoryAddress) & 0xFF;
         }
 
+        //Write through address
         public void AddressWrite(uint val)
         {
             if (_opcodeDefs[_currentInstruction].Mode == Direct) A = val;
@@ -116,6 +120,7 @@ namespace dotNES
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private uint PopWord() => Pop() | (Pop() << 8);
 
+        //create memory map
         protected override void InitializeMemoryMap()
         {
             base.InitializeMemoryMap();

@@ -29,7 +29,7 @@ namespace dotNES
                     return (uint)_emulator.Controller.ReadState() & 0x1;
             }
             return 0x00;
-            //throw new NotImplementedException();
+            
         }
     }
 }

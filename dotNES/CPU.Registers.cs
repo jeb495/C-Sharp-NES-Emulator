@@ -1,5 +1,9 @@
 ﻿using System.Runtime.CompilerServices;
 
+//Registers provide internal state storage for a device.
+//These may store a number, like the accumulator register in the CPU, or they may store other behaviour states, like the colour output of the PPU
+//http://wiki.nesdev.com/w/index.php/Registers
+
 namespace dotNES
 {
     sealed partial class CPU
