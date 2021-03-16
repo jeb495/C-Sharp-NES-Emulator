@@ -1,7 +1,4 @@
-﻿using System;
-
-
-//The NES PPU (picture proccessing unit) is used to generate a composite video signal with 240 lines of pixels
+﻿//The NES PPU (picture proccessing unit) is used to generate a composite video signal with 240 lines of pixels
 //It has its own address space, which typically contains 10 kilobytes of memory: 8 kilobytes of ROM
 //http://wiki.nesdev.com/w/index.php/PPU
 
@@ -297,7 +294,7 @@ namespace dotNES
                 }
             }
 
-            
+
             if (F.VBlankStarted && _cpuClocksSinceVBL == 2270)
             {
                 F.VBlankStarted = false;
@@ -316,7 +313,7 @@ namespace dotNES
                 // Happens at the same time as 1st cycle of NT byte fetch
                 if (scanline == -1)
                 {
-                    
+
                     _ppuClocksSinceVBL = 0;
                     F.VBlankStarted = false;
                     F.Sprite0Hit = false;

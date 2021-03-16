@@ -2,12 +2,12 @@
 {
     public interface IRenderer
     {
-       string RendererName { get; }
+        string RendererName { get; }
 
-       void Draw();
+        void Draw();
 
-       void InitRendering(UI ui);
+        void InitRendering(UI ui);
 
-       void EndRendering();
+        void EndRendering();
     }
 }

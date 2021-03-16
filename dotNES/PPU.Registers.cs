@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace dotNES
+﻿namespace dotNES
 {
     partial class PPU
     {
@@ -53,7 +51,7 @@ namespace dotNES
             /* PPUSCROLL registers */
             //[Obsolete]
             public uint ScrollX;
-           // [Obsolete]
+            // [Obsolete]
             public uint ScrollY;
 
             public bool RenderingEnabled => DrawBackground || DrawSprites;

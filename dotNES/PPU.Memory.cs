@@ -99,7 +99,7 @@ namespace dotNES
                     addr -= 0x10;
                 return _paletteRAM[(addr - 0x3F00) & 0x1F];
             });
-            
+
             MapWriteHandler(0x2000, 0x2FFF, (addr, val) => _vram[GetVRAMMirror(addr)] = val);
             MapWriteHandler(0x3000, 0x3EFF, (addr, val) => _vram[GetVRAMMirror(addr - 0x1000)] = val);
             MapWriteHandler(0x3F00, 0x3FFF, (addr, val) =>

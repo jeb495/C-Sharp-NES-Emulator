@@ -1,6 +1,6 @@
-﻿using System;
+﻿using OpenGL;
+using System;
 using System.Drawing;
-using OpenGL;
 
 namespace dotNES.Renderers
 {

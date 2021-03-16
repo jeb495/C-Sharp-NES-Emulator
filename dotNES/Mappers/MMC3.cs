@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-using static dotNES.Cartridge.VRAMMirroringMode;
+﻿using static dotNES.Cartridge.VRAMMirroringMode;
 
 namespace dotNES.Mappers
 {
@@ -160,7 +158,7 @@ namespace dotNES.Mappers
                 _prgBankOffsets[i] %= (uint)_prgROM.Length;
 
             for (int i = 0; i < _chrBankOffsets.Length; i++)
-                _chrBankOffsets[i] = (uint) (_chrBankOffsets[i] * 0x400 % _chrROM.Length);
+                _chrBankOffsets[i] = (uint)(_chrBankOffsets[i] * 0x400 % _chrROM.Length);
         }
     }
 }

@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace dotNES
 {
@@ -30,7 +26,7 @@ namespace dotNES
             switch (reg)
             {
                 case 0x4016:
-                    return (uint) _emulator.Controller.ReadState() & 0x1;
+                    return (uint)_emulator.Controller.ReadState() & 0x1;
             }
             return 0x00;
             //throw new NotImplementedException();

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using dotNES.Controllers;
+using dotNES.Renderers;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
@@ -6,8 +8,6 @@ using System.Drawing.Imaging;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
-using dotNES.Controllers;
-using dotNES.Renderers;
 
 namespace dotNES
 {
@@ -271,7 +271,7 @@ namespace dotNES
                     BootCartridge(files[0]);
                     AllowDrop = false;
                 }
-                catch (Exception ex) 
+                catch (Exception ex)
                 {
                     Console.WriteLine(ex);
                     MessageBox.Show("Error loading ROM file; either corrupt or unsupported");

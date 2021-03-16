@@ -20,7 +20,7 @@ namespace dotNES
             SP = 0xFD;
             P = 0x24;
 
-            PC = ReadWord(_interruptHandlerOffsets[(int) InterruptType.RESET]);
+            PC = ReadWord(_interruptHandlerOffsets[(int)InterruptType.RESET]);
         }
 
         public void Reset()
@@ -55,7 +55,7 @@ namespace dotNES
             Cycle += _opcodeDefs[_currentInstruction].Cycles;
 
             ResetInstructionAddressingMode();
-            
+
 
             Opcode op = _opcodes[_currentInstruction];
             if (op == null)

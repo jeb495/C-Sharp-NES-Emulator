@@ -1,14 +1,14 @@
-﻿using System;
-using System.Windows.Forms;
-using SharpDX;
+﻿using SharpDX;
 using SharpDX.Direct2D1;
 using SharpDX.Direct3D;
 using SharpDX.Direct3D11;
 using SharpDX.DXGI;
+using SharpDX.Mathematics.Interop;
+using System;
+using System.Windows.Forms;
 using AlphaMode = SharpDX.Direct2D1.AlphaMode;
 using Device = SharpDX.Direct3D11.Device;
 using Factory = SharpDX.DXGI.Factory;
-using SharpDX.Mathematics.Interop;
 using Resource = SharpDX.Direct3D11.Resource;
 
 namespace dotNES.Renderers
@@ -47,7 +47,7 @@ namespace dotNES.Renderers
 
                 Device.CreateWithSwapChain(DriverType.Hardware,
                     DeviceCreationFlags.BgraSupport,
-                    new[] {SharpDX.Direct3D.FeatureLevel.Level_10_0},
+                    new[] { SharpDX.Direct3D.FeatureLevel.Level_10_0 },
                     desc,
                     out device,
                     out swapChain);

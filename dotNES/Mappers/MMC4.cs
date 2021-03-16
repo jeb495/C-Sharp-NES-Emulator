@@ -1,5 +1,4 @@
-﻿using System;
-using static dotNES.Cartridge.VRAMMirroringMode;
+﻿using static dotNES.Cartridge.VRAMMirroringMode;
 
 namespace dotNES.Mappers
 {

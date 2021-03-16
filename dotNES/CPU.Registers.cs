@@ -66,7 +66,7 @@ namespace dotNES
 
         public uint P
         {
-            get => (uint) ((F.Carry.AsByte() << 0) |
+            get => (uint)((F.Carry.AsByte() << 0) |
                            (F.Zero.AsByte() << 1) |
                            (F.InterruptsDisabled.AsByte() << 2) |
                            (F.DecimalMode.AsByte() << 3) |

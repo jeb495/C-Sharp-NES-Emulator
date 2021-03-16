@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
 
 //Hardcoding control interface to A/S for A/B and the arrow keys as well as the enter key for start and the right shift key for select

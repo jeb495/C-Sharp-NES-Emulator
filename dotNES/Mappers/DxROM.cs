@@ -24,7 +24,7 @@
                     if (_currentBank <= 1) val &= 0x1F;
                     else if (_currentBank <= 5) val &= 0x3F;
                     else val &= 0xF;
-                  
+
                     _banks[_currentBank] = val;
                     UpdateOffsets();
                 }

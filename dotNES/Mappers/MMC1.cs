@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.CompilerServices;
-using static dotNES.Cartridge.VRAMMirroringMode;
+﻿using static dotNES.Cartridge.VRAMMirroringMode;
 
 namespace dotNES.Mappers
 {

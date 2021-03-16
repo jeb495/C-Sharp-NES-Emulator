@@ -35,7 +35,7 @@ namespace dotNES.Mappers
             var cart = emulator.Cartridge;
             _prgROM = cart.PRGROM;
             _chrROM = cart.CHRROM;
-            _lastBankOffset = (uint) _prgROM.Length - 0x4000;
+            _lastBankOffset = (uint)_prgROM.Length - 0x4000;
         }
 
         public virtual void InitializeMemoryMap(CPU cpu)

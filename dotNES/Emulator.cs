@@ -1,10 +1,10 @@
-﻿using System;
+﻿using dotNES.Controllers;
+using dotNES.Mappers;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using dotNES.Controllers;
-using dotNES.Mappers;
 
 
 //emulator settings are set here in the "Emulator Class"
@@ -13,9 +13,9 @@ namespace dotNES
     class Emulator
     {
         private static readonly Dictionary<int, KeyValuePair<Type, MapperDef>> Mappers = (from type in Assembly.GetExecutingAssembly().GetTypes()
-                                                                 let def = (MapperDef)type.GetCustomAttributes(typeof(MapperDef), true).FirstOrDefault()
-                                                                 where def != null
-                                                                 select new { def, type }).ToDictionary(a => a.def.Id, a => new KeyValuePair<Type, MapperDef>(a.type, a.def));
+                                                                                          let def = (MapperDef)type.GetCustomAttributes(typeof(MapperDef), true).FirstOrDefault()
+                                                                                          where def != null
+                                                                                          select new { def, type }).ToDictionary(a => a.def.Id, a => new KeyValuePair<Type, MapperDef>(a.type, a.def));
 
         //seting definitions for the controller, CPU, PPU, among others
         public IController Controller;

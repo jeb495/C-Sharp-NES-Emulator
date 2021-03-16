@@ -40,7 +40,7 @@ namespace dotNES.Renderers
         {
             _gameBitmap?.Dispose();
 
-            if(_rawBitmap.IsAllocated) _rawBitmap.Free();
+            if (_rawBitmap.IsAllocated) _rawBitmap.Free();
 
             _rawBitmap = GCHandle.Alloc(_ui.rawBitmap, GCHandleType.Pinned);
             _gameBitmap = new Bitmap(UI.GameWidth, UI.GameHeight, UI.GameWidth * 4, PixelFormat.Format32bppPArgb, _rawBitmap.AddrOfPinnedObject());

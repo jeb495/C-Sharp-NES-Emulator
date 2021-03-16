@@ -15,7 +15,7 @@ namespace dotNES.Mappers
 
         public override void InitializeMemoryMap(CPU cpu)
         {
-            cpu.MapReadHandler(0x8000, 0xFFFF, addr => _prgROM[_bankOffset + (addr - 0x8000)]);           
+            cpu.MapReadHandler(0x8000, 0xFFFF, addr => _prgROM[_bankOffset + (addr - 0x8000)]);
             cpu.MapWriteHandler(0x8000, 0xFFFF, (addr, val) =>
             {
                 _bankOffset = (val & 0x7) * 0x8000;
