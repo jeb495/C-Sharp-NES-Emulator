@@ -7,19 +7,13 @@
 ###  -APU support, meaning audio will finally be supported
 ###  -PPU filters, including a gameboy filter in addition to a virtual boy filter
 
-![](http://i.imgur.com/aef0cM9.png) <!-- Donkey Kong -->
-![](http://i.imgur.com/OjrvRmz.png) <!-- Super Mario Bros -->
-![](http://i.imgur.com/OKPWHhP.png) <!-- Zelda -->
-![](http://i.imgur.com/cga8ku8.png) <!-- Adventures of Lolo -->
-![](http://i.imgur.com/Xyfp0AZ.png) <!-- Castlevania 2 -->
-![](http://i.imgur.com/9lBMzz8.png) <!-- Contra -->
 
 
 
-Emulator.NES will render video with OpenGL or Direct3D, depending on your platform. A slower software-only renderer
+will render video with OpenGL or Direct3D, depending on your platform. A slower software-only renderer
 is also included for systems that support neither.
 
-## Controls
+## Control
 Controls are currently hardcoded.
 
 * A/S &mdash; A/B
