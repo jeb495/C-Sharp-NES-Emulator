@@ -1,5 +1,5 @@
-# A fully documented NES Emulator written in c#, foundation provided ny https://github.com/Xyene
-## New features and overall codebase improvements are either implemented or are being worked on
+# A fully documented NES Emulator written in c#
+## New features and overall codebase improvements are either implemented or are being worked on. Foundation provided by https://github.com/Xyene
 ## The main resource used was the NES Dev Wiki --> http://wiki.nesdev.com/w/index.php/Nesdev_Wiki
  A C# emulator for Nintendo Entertainment System (NES) hardware.
 
